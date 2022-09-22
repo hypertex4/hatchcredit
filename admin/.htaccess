@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{index.php} !-f
+
+RewriteRule ^loan-application-details/([0-9-]*)$ loan-application-details.php?quest_id=$1 [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
